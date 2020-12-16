@@ -1,3 +1,3 @@
 # homebrew-xray
 
-#Setting Travis
+# Setting Github Actions
