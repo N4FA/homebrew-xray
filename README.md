@@ -1,1 +1,3 @@
 # homebrew-xray
+
+#Setting Travis
