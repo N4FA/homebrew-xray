@@ -1,3 +1,5 @@
 # homebrew-xray
 
-# Setting Github Actions
+# TODO
+Set Github Actions...
+Finish installation docs...
