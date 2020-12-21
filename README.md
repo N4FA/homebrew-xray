@@ -1,7 +1,7 @@
 ### homebrew xray-core 
 
 
-The homebrew tap for xray-core.
+The homebrew tap for [xray-core](https://github.com/XTLS/Xray-core).
 
 
 ------
