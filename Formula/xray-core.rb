@@ -8,9 +8,12 @@ class XrayCore < Formula
 
 
   def install
+    
     bin.install "xray"
     pkgshare.install "geoip.dat"
     pkgshare.install "geosite.dat"
+    (etc/"xray").mkpath
+
 
   end
 
@@ -49,7 +52,7 @@ class XrayCore < Formula
   
   def caveats
    <<~EOS
-      Get example configs at https://github.com/XTLS/Xray-examples  and save config.json to #{etc}/xray
+      Get example configs at https://github.com/XTLS/Xray-examples and save config.json to #{etc}/xray
     EOS
   end
 end
