@@ -26,7 +26,8 @@ jobs:
           GH_REF: ${{ secrets.GH_REF }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          cd homebrew-xray
+          pwd
+          ls
           git config --global user.name $USERNAME
           git config --global user.email $EMAIL
           chmod +x checker.sh
