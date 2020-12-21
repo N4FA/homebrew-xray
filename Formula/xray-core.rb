@@ -3,7 +3,7 @@ class XrayCore < Formula
   homepage "https://t.me/projectXray"
   url "https://github.com/XTLS/Xray-core/releases/download/v1.1.4/Xray-macos-64.zip"
   sha256 "9e12f4b7a18d124ce118167761152e31aca4e51dccc509a7858b780c468c8b37"
-  version "v1.1.4"
+  version "v1.1.3"
   license "MPL-2.0"
 
 
