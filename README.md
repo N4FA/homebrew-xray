@@ -61,7 +61,7 @@ once you installed, you can run command via `xray` to run xray-core.
 You can get example config files at `https://github.com/XTLS/Xray-examples` 
 defualt config file location is:`/usr/local/etc/v2ray/config.json`
 
-step 1: edit the default config:
+step 1: save and edit the example config:
 
 ```bash
 vim /usr/local/etc/xray/config.json
