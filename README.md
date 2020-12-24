@@ -73,7 +73,7 @@ step 2: run xray-core without starting at login.
 brew services run xray-core
 ```
 
-or run v2ray-core and register it to launch at login via:
+or run xray-core and register it to launch at login via:
 
 ```bash
 brew services start xray-core
