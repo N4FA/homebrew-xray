@@ -38,7 +38,7 @@ brew upgrade xray-core
 
 ------
 
-### Uninstall v2ray-core
+### Uninstall xray-core
 
 step 1: uninstall core
 
@@ -49,7 +49,7 @@ brew uninstall xray-core
 step 2: untap formula
 
 ```bash
-brew untap N4FA/v2ray
+brew untap N4FA/xray
 ```
 
 ------
@@ -59,7 +59,7 @@ brew untap N4FA/v2ray
 once you installed, you can run command via `xray` to run xray-core.
 
 You can get example config files at `https://github.com/XTLS/Xray-examples` 
-defualt config file location is:`/usr/local/etc/v2ray/config.json`
+defualt config file location is:`/usr/local/etc/xray/config.json`
 
 step 1: save and edit the example config:
 
