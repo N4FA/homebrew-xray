@@ -59,7 +59,7 @@ brew untap N4FA/xray
 once you installed, you can run command via `xray` to run xray-core.
 
 You can get example config files at `https://github.com/XTLS/Xray-examples` 
-defualt config file location is:`/usr/local/etc/xray/config.json`
+default config file location is:`/usr/local/etc/xray/config.json`
 
 step 1: save and edit the example config:
 
