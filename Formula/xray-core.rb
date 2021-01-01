@@ -1,9 +1,9 @@
 class XrayCore < Formula
   desc "Xray, Penetrates Everything. Also the best xray-core, with XTLS support. Fully compatible configuration."
   homepage "https://t.me/projectXray"
-  url "https://github.com/XTLS/Xray-core/releases/download/v1.1.5/Xray-macos-64.zip"
-  sha256 "01e3479bbc63a0478e3a1c53214c721688c241b8a0ca05308f5daee16db277b3"
-  version "1.1.5"
+  url "https://github.com/XTLS/Xray-core/releases/download/v1.2.0/Xray-macos-64.zip"
+  sha256 "0aa5570d917c22e77deef67c5a70dd3d8630c3e992be5c1528250bb57ab16797"
+  version "1.2.0"
   license "MPL-2.0"
 
 
