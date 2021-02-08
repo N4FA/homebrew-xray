@@ -6,7 +6,7 @@ class XrayCore < Formula
     sha256 "938c2d12734d2b0289a08e476df9fe913c806e28204c8645da727eb29e7a534e" # intel
   else
     url "https://github.com/XTLS/Xray-core/releases/download/v1.2.4/Xray-macos-arm64-v8a.zip" # arm_url
-    sha256 "d55ebec9e17247ea2e0e32d68a7d7f98e71886ef768fc36873f32e1960c93625" # arm
+    sha256 "" # arm
   end
   version "1.2.4"
   license "MPL-2.0"
