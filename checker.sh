@@ -50,7 +50,7 @@ fi
 
 
 V_HASH256_INTEL=$(sha256sum Xray-macos-64.zip |cut  -d ' ' -f 1)
-V_HASH256_ARM=$(sha256sum Xray-macos-arm64-v8a.zip.zip |cut  -d ' ' -f 1)
+V_HASH256_ARM=$(sha256sum Xray-macos-arm64-v8a.zip |cut  -d ' ' -f 1)
 
 
 log "file hash: $V_HASH256_INTEL parser intel xray-core version..."
