@@ -18,6 +18,7 @@ loop_parser(){
         fi
     done
 }
+TAG=$(curl -s -H 'Accept: application/vnd.github.v3+json' https://api.github.com/repos/XTLS/Xray-core/tags | grep -Eom 1 'v[0-9]+\.[0-9]+\.[0-9]+')
 
 log 'parser xray download url'
 
@@ -78,7 +79,8 @@ sed -i "s#^\s*intel_arm.*#  url \"$DOWNLOAD_URL_ARM\"#g" homebrew-xray/Formula/x
 sed -Ee "/^ *sha256.*intel/s/[0-9a-f]{64}/${V_HASH256_INTEL}/" -i homebrew-xray/Formula/xray-core.rb
 sed -Ee "/^ *sha256.*arm/s/[0-9a-f]{64}/${V_HASH256_ARM}/" -i homebrew-xray/Formula/xray-core.rb
 
-sed -i "s#^\s*version.*#  version \"$V_VERSION\"#g" homebrew-xray/Formula/xray-core.rb
+sed -Ee "/^ *version|^ *url/s/[0-9]+\.[0-9]+\.[0-9]+/${TAG#v}/" -i homebrew-xray/Formula/xray-core.rb
+
 
 log "update config done. start update repo..."
 
