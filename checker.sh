@@ -83,7 +83,7 @@ sed -i "s#^\s*version.*#  version \"$V_VERSION\"#g" homebrew-xray/Formula/xray-c
 log "update config done. start update repo..."
 
 cd homebrew-xray || exit
-git commit -am "travis automated update version $V_VERSION"
+git commit -am "GITHUB ACTIONS automated update version $V_VERSION"
 git push  --quiet "https://${GH_TOKEN}@${GH_REF}" main:main
 
 log "update repo done."
