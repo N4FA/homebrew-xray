@@ -1,4 +1,5 @@
-### homebrew xray-core 
+### homebrew xray-core  
+### INTEL and M1 
 
 
 The homebrew tap for [xray-core](https://github.com/XTLS/Xray-core).
