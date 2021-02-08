@@ -60,12 +60,10 @@ log "file hash: $V_HASH256_ARM parser arm xray-core version..."
 V_VERSION=$( loop_parser "tag_name" )
 V_VERSION="${V_VERSION:1}"
 
-if [ -z "$V_VERSION" ]; then
-    
-    log 'parser file version error, skip update.'
-    exit 0
-    
-fi
+#if [ -z "$V_VERSION" ]; then   
+#   log 'parser file version error, skip update.'
+#   exit 0   
+#fi
 
 
 log "file version: $V_VERSION start clone..."
