@@ -22,8 +22,6 @@ TAG=$(curl -s -H 'Accept: application/vnd.github.v3+json' https://api.github.com
 
 log 'parser xray download url'
 
-log "$TAG"
-
 DOWNLOAD_URL_INTEL=$( loop_parser 'browser_download_url.*macos-64.zip"$' )
 DOWNLOAD_URL_ARM=$( loop_parser 'browser_download_url.*macos-arm64-v8a.zip"$' )
 
@@ -60,8 +58,9 @@ log "file hash: $V_HASH256_INTEL parser intel xray-core version..."
 log "file hash: $V_HASH256_ARM parser arm xray-core version..."
 
 
-V_VERSION=$( loop_parser "tag_name" )
-V_VERSION="${V_VERSION:1}"
+TAG=$( loop_parser "tag_name" )
+V_VERSION="${TAG:1}"
+
 
 if [ -z "$V_VERSION" ]; then   
    log 'parser file version error, skip update.'
@@ -81,7 +80,7 @@ sed -i "s#^\s*intel_arm.*#  url \"$DOWNLOAD_URL_ARM\"#g" homebrew-xray/Formula/x
 sed -Ee "/^ *sha256.*intel/s/[0-9a-f]{64}/${V_HASH256_INTEL}/" -i homebrew-xray/Formula/xray-core.rb
 sed -Ee "/^ *sha256.*arm/s/[0-9a-f]{64}/${V_HASH256_ARM}/" -i homebrew-xray/Formula/xray-core.rb
 
-sed -Ee "/^ *version|^ *url/s/[0-9]+\.[0-9]+\.[0-9]+/${TAG#v}/" -i homebrew-xray/Formula/xray-core.rb
+sed -Ee "/^ *version|^ *url/s/[0-9]+\.[0-9]+\.[0-9]+/${V_VERSION}/" -i homebrew-xray/Formula/xray-core.rb
 
 
 log "update config done. start update repo..."
