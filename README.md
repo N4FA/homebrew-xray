@@ -1,9 +1,6 @@
-### homebrew xray-core  
-### INTEL and M1 Binaries from Xray-core Latest Release 
-(no pre-build)
+### The homebrew tap for [xray-core](https://github.com/XTLS/Xray-core).
 
-
-The homebrew tap for [xray-core](https://github.com/XTLS/Xray-core).
+INTEL and M1 Binaries from Xray-core Latest Release (no pre-build)
 
 
 ------
