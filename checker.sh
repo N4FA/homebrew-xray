@@ -22,6 +22,8 @@ TAG=$(curl -s -H 'Accept: application/vnd.github.v3+json' https://api.github.com
 
 log 'parser xray download url'
 
+log '$TAG  '
+
 DOWNLOAD_URL_INTEL=$( loop_parser 'browser_download_url.*macos-64.zip"$' )
 DOWNLOAD_URL_ARM=$( loop_parser 'browser_download_url.*macos-arm64-v8a.zip"$' )
 
