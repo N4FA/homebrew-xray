@@ -1,3 +1,13 @@
+### DEPRECATED
+
+The xray-core has entered into homebrew/core
+Recommend using the official installation method to access more stable service
+```bash
+brew up
+brew install xray
+```
+
+
 ### The homebrew tap for [xray-core](https://github.com/XTLS/Xray-core).
 
 INTEL and M1 Binaries from Xray-core Latest Release (no pre-build)
