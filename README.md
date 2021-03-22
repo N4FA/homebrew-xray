@@ -1,6 +1,7 @@
 ### DEPRECATED
 
-The xray-core has entered into homebrew/core
+The xray-core has entered into homebrew/core.
+
 Recommend using the official installation method to access more stable service.
 However, you can also get the bins update with this repo until the XTLS/xray-core stops providing geoip.dat in the zips.
 
