@@ -1,4 +1,4 @@
-### DEPRECATED
+### ! DEPRECATED
 
 The xray-core has entered into homebrew/core.
 
